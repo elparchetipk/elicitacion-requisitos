@@ -1,0 +1,153 @@
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#1a1a1a"/>
+  
+  <!-- Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2d2d2d" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="800" fill="url(#grid)"/>
+  
+  <!-- Title -->
+  <rect x="50" y="30" width="900" height="60" rx="10" fill="#2c5aa0" stroke="#00bcd4" stroke-width="2"/>
+  <text x="500" y="55" font-family="Arial" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    ESTRATEGIA DE IDENTIFICACIÓN DE REQUISITOS
+  </text>
+  <text x="500" y="75" font-family="Arial" font-size="14" fill="#00bcd4" text-anchor="middle">
+    Proceso Sistemático para Extraer RFs y RNFs de Entrevistas
+  </text>
+  
+  <!-- Step 1: Análisis de Transcripciones -->
+  <rect x="50" y="120" width="280" height="150" rx="8" fill="#2d3748" stroke="#48bb78" stroke-width="2"/>
+  <text x="190" y="145" font-family="Arial" font-size="16" font-weight="bold" fill="#48bb78" text-anchor="middle">
+    1. ANÁLISIS DE TRANSCRIPCIONES
+  </text>
+  <text x="60" y="170" font-family="Arial" font-size="12" fill="#ffffff">• Identificar verbos de acción</text>
+  <text x="60" y="190" font-family="Arial" font-size="12" fill="#ffffff">• Buscar frases como "el sistema debe"</text>
+  <text x="60" y="210" font-family="Arial" font-size="12" fill="#ffffff">• Extraer restricciones y limitaciones</text>
+  <text x="60" y="230" font-family="Arial" font-size="12" fill="#ffffff">• Identificar actores y roles</text>
+  <text x="60" y="250" font-family="Arial" font-size="12" fill="#ffffff">• Marcar métricas y números específicos</text>
+  
+  <!-- Step 2: Categorización -->
+  <rect x="360" y="120" width="280" height="150" rx="8" fill="#2d3748" stroke="#ed8936" stroke-width="2"/>
+  <text x="500" y="145" font-family="Arial" font-size="16" font-weight="bold" fill="#ed8936" text-anchor="middle">
+    2. CATEGORIZACIÓN INICIAL
+  </text>
+  <text x="370" y="170" font-family="Arial" font-size="12" fill="#ffffff">• Funcionales vs No Funcionales</text>
+  <text x="370" y="190" font-family="Arial" font-size="12" fill="#ffffff">• Por módulo/componente</text>
+  <text x="370" y="210" font-family="Arial" font-size="12" fill="#ffffff">• Por prioridad (Must/Should/Could)</text>
+  <text x="370" y="230" font-family="Arial" font-size="12" fill="#ffffff">• Por stakeholder origen</text>
+  <text x="370" y="250" font-family="Arial" font-size="12" fill="#ffffff">• Por complejidad técnica</text>
+  
+  <!-- Step 3: Validación -->
+  <rect x="670" y="120" width="280" height="150" rx="8" fill="#2d3748" stroke="#9f7aea" stroke-width="2"/>
+  <text x="810" y="145" font-family="Arial" font-size="16" font-weight="bold" fill="#9f7aea" text-anchor="middle">
+    3. VALIDACIÓN Y REFINAMIENTO
+  </text>
+  <text x="680" y="170" font-family="Arial" font-size="12" fill="#ffffff">• Verificar con stakeholders</text>
+  <text x="680" y="190" font-family="Arial" font-size="12" fill="#ffffff">• Eliminar duplicados</text>
+  <text x="680" y="210" font-family="Arial" font-size="12" fill="#ffffff">• Resolver conflictos</text>
+  <text x="680" y="230" font-family="Arial" font-size="12" fill="#ffffff">• Definir criterios de aceptación</text>
+  <text x="680" y="250" font-family="Arial" font-size="12" fill="#ffffff">• Estimar esfuerzo desarrollo</text>
+  
+  <!-- RF Section -->
+  <rect x="50" y="300" width="450" height="220" rx="8" fill="#1a365d" stroke="#63b3ed" stroke-width="2"/>
+  <text x="275" y="325" font-family="Arial" font-size="18" font-weight="bold" fill="#63b3ed" text-anchor="middle">
+    🎯 REQUISITOS FUNCIONALES (RFs)
+  </text>
+  <text x="60" y="350" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">Características identificadoras:</text>
+  <text x="60" y="375" font-family="Arial" font-size="12" fill="#ffffff">• Describen QUÉ hace el sistema</text>
+  <text x="60" y="395" font-family="Arial" font-size="12" fill="#ffffff">• Incluyen verbos de acción específicos</text>
+  <text x="60" y="415" font-family="Arial" font-size="12" fill="#ffffff">• Definen comportamientos observables</text>
+  <text x="60" y="435" font-family="Arial" font-size="12" fill="#ffffff">• Especifican entradas y salidas</text>
+  <text x="60" y="460" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">Ejemplos de frases clave:</text>
+  <text x="60" y="480" font-family="Arial" font-size="11" fill="#63b3ed">"El usuario debe poder...", "El sistema debe calcular..."</text>
+  <text x="60" y="500" font-family="Arial" font-size="11" fill="#63b3ed">"Cuando el usuario hace X, el sistema debe Y"</text>
+  
+  <!-- RNF Section -->
+  <rect x="520" y="300" width="430" height="220" rx="8" fill="#2d1b69" stroke="#f093fb" stroke-width="2"/>
+  <text x="735" y="325" font-family="Arial" font-size="18" font-weight="bold" fill="#f093fb" text-anchor="middle">
+    ⚡ REQUISITOS NO FUNCIONALES (RNFs)
+  </text>
+  <text x="530" y="350" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">Características identificadoras:</text>
+  <text x="530" y="375" font-family="Arial" font-size="12" fill="#ffffff">• Describen CÓMO debe funcionar el sistema</text>
+  <text x="530" y="395" font-family="Arial" font-size="12" fill="#ffffff">• Incluyen métricas y números específicos</text>
+  <text x="530" y="415" font-family="Arial" font-size="12" fill="#ffffff">• Definen restricciones y limitaciones</text>
+  <text x="530" y="435" font-family="Arial" font-size="12" fill="#ffffff">• Especifican calidades del sistema</text>
+  <text x="530" y="460" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">Ejemplos de frases clave:</text>
+  <text x="530" y="480" font-family="Arial" font-size="11" fill="#f093fb">"En menos de X segundos...", "Disponible 24/7..."</text>
+  <text x="530" y="500" font-family="Arial" font-size="11" fill="#f093fb">"Con una seguridad de nivel...", "Soportar X usuarios"</text>
+  
+  <!-- Categories RNF -->
+  <rect x="50" y="540" width="900" height="180" rx="8" fill="#1a202c" stroke="#fbb6ce" stroke-width="2"/>
+  <text x="500" y="565" font-family="Arial" font-size="16" font-weight="bold" fill="#fbb6ce" text-anchor="middle">
+    📋 CATEGORÍAS PRINCIPALES DE REQUISITOS NO FUNCIONALES
+  </text>
+  
+  <!-- Performance -->
+  <rect x="70" y="580" width="130" height="90" rx="5" fill="#2a4365" stroke="#63b3ed" stroke-width="1"/>
+  <text x="135" y="600" font-family="Arial" font-size="12" font-weight="bold" fill="#63b3ed" text-anchor="middle">RENDIMIENTO</text>
+  <text x="80" y="620" font-family="Arial" font-size="10" fill="#ffffff">• Tiempo respuesta</text>
+  <text x="80" y="635" font-family="Arial" font-size="10" fill="#ffffff">• Throughput</text>
+  <text x="80" y="650" font-family="Arial" font-size="10" fill="#ffffff">• Latencia</text>
+  <text x="80" y="665" font-family="Arial" font-size="10" fill="#ffffff">• Usuarios concurrentes</text>
+  
+  <!-- Security -->
+  <rect x="220" y="580" width="130" height="90" rx="5" fill="#744210" stroke="#f6e05e" stroke-width="1"/>
+  <text x="285" y="600" font-family="Arial" font-size="12" font-weight="bold" fill="#f6e05e" text-anchor="middle">SEGURIDAD</text>
+  <text x="230" y="620" font-family="Arial" font-size="10" fill="#ffffff">• Autenticación</text>
+  <text x="230" y="635" font-family="Arial" font-size="10" fill="#ffffff">• Autorización</text>
+  <text x="230" y="650" font-family="Arial" font-size="10" fill="#ffffff">• Encriptación</text>
+  <text x="230" y="665" font-family="Arial" font-size="10" fill="#ffffff">• Auditoría</text>
+  
+  <!-- Usability -->
+  <rect x="370" y="580" width="130" height="90" rx="5" fill="#276749" stroke="#68d391" stroke-width="1"/>
+  <text x="435" y="600" font-family="Arial" font-size="12" font-weight="bold" fill="#68d391" text-anchor="middle">USABILIDAD</text>
+  <text x="380" y="620" font-family="Arial" font-size="10" fill="#ffffff">• Facilidad de uso</text>
+  <text x="380" y="635" font-family="Arial" font-size="10" fill="#ffffff">• Accesibilidad</text>
+  <text x="380" y="650" font-family="Arial" font-size="10" fill="#ffffff">• Experiencia UX</text>
+  <text x="380" y="665" font-family="Arial" font-size="10" fill="#ffffff">• Curva aprendizaje</text>
+  
+  <!-- Reliability -->
+  <rect x="520" y="580" width="130" height="90" rx="5" fill="#553c9a" stroke="#b794f6" stroke-width="1"/>
+  <text x="585" y="600" font-family="Arial" font-size="12" font-weight="bold" fill="#b794f6" text-anchor="middle">CONFIABILIDAD</text>
+  <text x="530" y="620" font-family="Arial" font-size="10" fill="#ffffff">• Disponibilidad</text>
+  <text x="530" y="635" font-family="Arial" font-size="10" fill="#ffffff">• Tolerancia fallos</text>
+  <text x="530" y="650" font-family="Arial" font-size="10" fill="#ffffff">• Recuperación</text>
+  <text x="530" y="665" font-family="Arial" font-size="10" fill="#ffffff">• Backup</text>
+  
+  <!-- Scalability -->
+  <rect x="670" y="580" width="130" height="90" rx="5" fill="#9c2a2a" stroke="#fc8181" stroke-width="1"/>
+  <text x="735" y="600" font-family="Arial" font-size="12" font-weight="bold" fill="#fc8181" text-anchor="middle">ESCALABILIDAD</text>
+  <text x="680" y="620" font-family="Arial" font-size="10" fill="#ffffff">• Crecimiento datos</text>
+  <text x="680" y="635" font-family="Arial" font-size="10" fill="#ffffff">• Usuarios simultáneos</text>
+  <text x="680" y="650" font-family="Arial" font-size="10" fill="#ffffff">• Recursos hardware</text>
+  <text x="680" y="665" font-family="Arial" font-size="10" fill="#ffffff">• Auto-scaling</text>
+  
+  <!-- Compliance -->
+  <rect x="820" y="580" width="110" height="90" rx="5" fill="#065f46" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="875" y="600" font-family="Arial" font-size="12" font-weight="bold" fill="#6ee7b7" text-anchor="middle">CUMPLIMIENTO</text>
+  <text x="830" y="620" font-family="Arial" font-size="10" fill="#ffffff">• Regulaciones</text>
+  <text x="830" y="635" font-family="Arial" font-size="10" fill="#ffffff">• Estándares</text>
+  <text x="830" y="650" font-family="Arial" font-size="10" fill="#ffffff">• Auditorías</text>
+  <text x="830" y="665" font-family="Arial" font-size="10" fill="#ffffff">• Documentación</text>
+  
+  <!-- Arrows showing flow -->
+  <path d="M 330 195 L 360 195" stroke="#00bcd4" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 640 195 L 670 195" stroke="#00bcd4" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00bcd4"/>
+    </marker>
+  </defs>
+  
+  <!-- Bottom tip -->
+  <rect x="50" y="740" width="900" height="40" rx="5" fill="#1a365d" stroke="#63b3ed" stroke-width="1"/>
+  <text x="500" y="765" font-family="Arial" font-size="14" font-weight="bold" fill="#63b3ed" text-anchor="middle">
+    💡 TIP: Los RFs responden "¿QUÉ hace?" - Los RNFs responden "¿CÓMO lo hace?"
+  </text>
+</svg>
